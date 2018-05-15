@@ -9,6 +9,7 @@
   "author": "Javier Paredes",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "npm": "^6.0.1"
   }
 }
