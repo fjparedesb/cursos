@@ -15,14 +15,21 @@ const argv = yargs
     .alias('help', 'h')
     .argv;
 
-// geocode.geocodeAddress(argv.a, (errorMessage, results) => {
-//     if (errorMessage) {
-//         console.log(errorMessage);
-//     } else {
-//         console.log(JSON.stringify(results, undefined, 2));
-//     }
-// });
+geocode.geocodeAddress(argv.a, (errorMessage, results) => {
+    if (errorMessage) {
+        console.log(errorMessage);
+    } else {
+        console.log(results.address);
+        weather.getWeader(results.latitude, results.longitude, (errorMessage, weatherResults) => {
+            if (errorMessage) {
+                console.log(errorMessage);
+            } else {
+                console.log(`Actualmente estamos a ${weatherResults.temperature}. Se siente a ${weatherResults.apparentTemperature}.`);
+            } 
+        });
+    }
+});
 
-weather.getWeader();
+
 
 
