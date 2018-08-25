@@ -1,0 +1,15 @@
+{
+  "name": "geolocapp",
+  "version": "1.0.0",
+  "description": "Geo Localization App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jparedes",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "yargs": "^12.0.1"
+  }
+}
