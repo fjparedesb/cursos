@@ -19,7 +19,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     //     console.log('Unable to fetch todos', err);
     // });
 
-    db.collection('Users').find({name: 'Fernando'}).count().then((count) => {
+    db.collection('Users').find({id: new ObjectID('5b82da19de555822e80523fe')}).count().then((count) => {
         console.log('Todos', count);
     }, (err) => {
         console.log('Unable to fetch todos', err);
