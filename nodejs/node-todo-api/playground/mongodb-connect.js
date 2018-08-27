@@ -8,8 +8,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     console.log('Conectado al servidor MongoDB');
 
     // db.collection('Todos').insertOne({
-    //     text: 'Something to do',
-    //     completed: false
+    //     text: 'Walk the dog',
+    //     completed: true
     // }, (err, result) => {
     //     if (err) {
     //         return console.log('Unable to insert todo', err);
@@ -19,8 +19,8 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     // });
 
     // db.collection('Users').insertOne({
-    //     name: 'Javier',
-    //     age: 41,
+    //     name: 'Lulu',
+    //     age: 47,
     //     location: 'cancun'
     // }, (err, result) => {
     //     if (err) {
