@@ -5,3 +5,5 @@ nodejs/node-web-server/server.js
 nodejs/node-tests/node_modules/
 nodejs/node-todo-api/node_modules/
 nodejs/geolocapp/node_modules/
+reactjs/react-complete-guide/node_modules/
+reactjs/burgerbuilder/node_modules/
