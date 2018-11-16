@@ -4,15 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/serever.js",
+    "test": "export NODE_ENV = test || SET \"NODE_ENV = test\" && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "engines": {
+    "node": "10.1.0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "lodash": "^4.15.0",
     "mongodb": "^2.2.5",
+<<<<<<< HEAD
     "mongoose": "^4.5.9",
     "validator": "^5.6.0"
+=======
+    "mongoose": "^4.5.9"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.0.2",
+    "nodemon": "^1.10.2",
+    "supertest": "^2.0.0"
+>>>>>>> ee1cd1c66f2f506cc5e3f91e2005948b040df787
   }
 }
